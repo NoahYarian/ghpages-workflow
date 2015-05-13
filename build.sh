@@ -9,4 +9,7 @@ mkdir public
 cd src
 find . -name "*.html" | cpio -pdvm ../public
 cd ..
-rm -rf src/**/*.html public/**/_*.html public/_partials
+rm -rf src/*.html \
+       src/**/*.html \
+       public/**/_*.html \
+       public/_partials
