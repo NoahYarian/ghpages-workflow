@@ -19,3 +19,6 @@ rm -rf src/*.html \
   --output-style compressed \
   --source-map-embed \
   src/_styles/main.scss public/css/main.css
+
+# convert ES6 JS to ES5
+./node_modules/.bin/babel src --out-dir public -s inline
